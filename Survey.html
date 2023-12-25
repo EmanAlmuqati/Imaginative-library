@@ -1,0 +1,131 @@
+<!DocType html>
+<html>
+<head>
+   <title> Imaginative Minds libary </title> 
+    <meta charset="UTF-8">
+    <style>
+    .box:before{
+        width: 1400px;
+        height: 1200px;
+        border: 1px solid gray;
+        background:antiquewhite;
+        background-size: 800px 800px;
+        opacity: 0.4;
+        content:"";
+        position: absolute;
+         z-index: -1;
+        </style>
+    </head>
+<body>
+    <div class="box">
+    </div>
+<h1 style="color:SaddleBrown;">Imaginative Minds libary</h1>
+        <fieldset>
+            <form>
+            <legend>Login</legend>
+        <div>
+    <label for="Name">Name</label>
+   <input id="Name" type="text" required placeholder="user name" >
+            <br> <br>
+     </div>   
+   <label for="pw"> password</label>
+   <input id= "pw" type="password" placeholder="123....." >
+<br>
+                </form>
+       </fieldset> 
+        <fieldset>
+        <legend> personal info </legend>
+
+         <label for="age"> Age</label>
+         <input id="age" type="number" required > 
+            <br>
+            <br>
+         <label for="dob"> DOB</label>
+         <input id="dob" type="data" required placeholder="DD/MM/YY" >
+            <br>
+            <br>
+            <label for="em"> Email</label>
+         <input id="em" type="email" required  placeholder="username@gmail.com">
+         
+            <br>
+            <br>
+
+        <label for="city"> city </label>
+        <input id="city" type="city" placeholder="Makkah" >
+            <br>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend> Extra info</legend>
+            <p>what is your gender?</p>
+            <input id="m" type="radio" value="M" name="gender">
+         <label for="m "> Male </label>
+            <input id="f" type="radio" value="F" name="gender">
+        <label for="f"> Female </label>
+            <br><br>
+             <label for="tel"> Telephone </label>
+        <input id="tel" type="tel" placeholder="+9665648372639" >
+        </fieldset>
+        <fieldset>
+            <legend> Library evaluation</legend>
+        <p> 1. Did you like our library?</p>
+            <input id="jj" type="radio" value="Yes" name="yes">
+         <label for="jj "> YES </label>
+            <input id="ss" type="radio" value="No" name="No">
+        <label for="ss"> NO </label>
+            <p>2. What do you like about our library?</p>
+            <label for="tt">  </label >
+            <input id="tt" type="text" >
+             <p> 3.What books do you recommend?</p>
+        <label for="ss">  </label >
+            <input id="ss" type="text" >
+        <p>4. What are the things you did't like in our library?</p>
+            <label for="ff">  </label >
+            <input id="ff" type="text" >
+            <br>
+            <p>5.What improvements should we make to our library?</p>
+            <label for="ll">  </label >
+            <input id="ll" type="text" >
+            <p>6. What is your level of satisfaction with the library?</p>
+            <input id="oo" type="radio" name="oo">
+         <label for="oo "> very satisfied </label>
+            <br>
+            <input id="pp" type="radio" name="p">
+         <label for="pp ">satisfied</label>
+            <br>
+            <input id="ab" type="radio" name="ab">
+         <label for="ab "> neutral </label>
+            <br>
+            <input id="ac" type="radio" name="ac">
+         <label for="ac "> Not satisfied</label>
+            <br>
+            <input id="ad" type="radio" name="ad">
+            <label for="ad "> Not very satisfied </label>
+        </fieldset>
+        <fieldset>
+        <b>A book you want to read again?</b>
+            <br>
+        <input list="li"><datalist id="li">
+                <option value="Kafka on the beach"> </option>
+                <option value=" Winter's Tale "> </option>
+                <option value="Norwegian Forest"> </option>
+                <option value="Secrets of knowledge and development of personalities"> </option>
+                <option value="dazzling power"> </option>
+                <option value="The art of indifference "> </option>
+                <option value="balsam"> </option>
+                <option value="mala nabuh bih "> </option>
+                <option value="albukhala"> </option>
+                <option value="Al-Mutanabbi's Diwan "> </option>
+                <option value="khaof"> </option>
+                <option value="Al-kon"> </option>
+                <option value="The most brief history of time"> </option>
+                <option value="The philosophy of pleasure and pain "> </option>
+            </datalist>
+        </fieldset>
+        <form>
+        <label for="te"> Write here what you want</label>
+        <br>
+        <textarea id="te" row="3" col="20" name="comment"> </textarea>
+    <input type="submit" value="Submit"> </form>
+    </body>
+</html>
