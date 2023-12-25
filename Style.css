@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* home page style */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgb(236, 217, 198), rgb(0, 0, 0,0.75)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 290px;
+    cursor: pointer;
+    border: 1px solid #bc8355; 
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{ 
+    text-decoration: none;
+    color: #734d26;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #d2a679;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position:static;
+    top: 50%;
+    transform: translateYrotate(-50%);
+    text-align: center;
+    color: #392613;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+/*Table style*/
+.table{
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  border=2px ; 
+  background-color: #bc8355;
+}
+.vid{
+  width=50%;
+  height=50%; 
+}
+
+/* Countact US page style */
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient( rgb(236, 217, 198), rgb(0, 0, 0,0.75)),url(background.jpg);;
+    background-size: cover;
+}
+
+.contact .contentContactUS{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .contentContactUS h2{
+    font-size: 36px;
+    font-weight: 500;
+    background-color:#734d26; 
+}
+
+.contact .contentContactUS pre{
+    font-weight: 300;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #392613;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5%;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width:100px;
+    background:#392613;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contactForm .inputBox a{ 
+    text-decoration: none;
+    width:100px;
+    background: #392613;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width:991px){
+    .content{padding: 50px;}
+    .container{flex-direction: column;}
+    .container .contactInfo{margin-bottom: 40px;}
+    .container .contactInfo .contactForm{width: 100%;}
+}
+
+/* Quotations page style */
+
+a{
+  text-decoration: none;  
+  color:black;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(librarybackground2.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-contentQ{
+    margin-bottom: 150px;
+    text-align-last: center; 
+}
+
+.header-contentQ h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 500px;
+    height: 4px;
+    background: #bc8355;
+    margin:10px auto;
+    border-radius: 5px;
+}
+
+.header-contentQ h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: #bc8355;
+    border-radius: 30px;
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+}
+
+.blockquote {
+    max-width: 600px;
+    margin: 5rem auto;
+    padding: 25px;
+    background: #FAEBD7;
+    border: 1px solid #bc8355;
+    box-sizing: border-box;
+}
+
+blockquote::before{ /* "" */
+    content: '\201c';
+   bottom: -30px;
+}
+
+blockquote::after{ /* "" */
+    content: '\201d';
+    top: 10px;
+    left:-40px;
+    
+}
+
+
+.blockquote--bordered{
+    border-left-width: 10px;
+}
+
+.blockquote__text{
+    font-family: 'gelasio', serif;
+    font-style: italic;
+    font-size:1.15em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.blockquote__text:not(last-child){
+    margin-bottom: 1em;
+    
+}
+
+.blockquote__text--credit{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+/*FOOTER*/
+.footer-basic {
+  padding:40px 0;
+  background-color:#bc8355;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:black;
+  margin-bottom:0;
+}
+
+/* Library contents page*/
+
+/*Footer*/
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*End Library contents page */
+
+/* about us page*/ 
+
+.text-center{
+  text-align: center;
+    font-size: xx-large;
+    font-family: italic;
+color: white;
+}
+.AboutUs{
+ width: 100%;
+  padding: 78x 0px;
+    background-color: darksalmon;  
+}
+.AboutUs img {
+height: auto;
+width: 420px;
+    
+    
+}
+.about-text{
+  width: 550px;  
+    
+}
+.main{
+  width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.about-text h5{
+ color:snow;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    
+}
+.about-text p{
+  color:antiquewhite;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    
+}
+button{
+ background: antiquewhite;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+botton:hover{
+    background: transparent;
+    border: 2px solid antiquewhite;
+    cursor: pointer;
+}
+.backgroundimg{
+    
+ background-image: url(b2.jpg);   
+}
+.ctnAboutus{
+    position:absolute;
+    margin: 30px ;
+    padding: 8px 150px;
+    background: antiquewhite;
+    border-radius: 30px;
+}
+/*end of about us page */
+
+/* MOST famous page style */
+#authors{
+	background :url(backgroundMost.jpg) no-repeat
+	center center/cover;
+	height: 600px;
+	padding-top:40px;
+	
+
+}
+.auth{
+	float: left;
+	height:500px;
+	width:33%;
+	color: #fff;
+	padding:20px;
+	text-align: center;
+	margin: 20 01;
+}
+.auth img{
+ border-radius: 50%;
+
+}
+
+/*end  MOST famous page style */
